@@ -1,7 +1,7 @@
 Meteor.methods
-  'items': (query) ->
+  'authors': (query) ->
     if query != ''
-      authors.find({surname: {$regex: ".*^"+query+".*$", $options: 'i'}}).fetch()
+      authors.find({surname: {$regex: "^.*"+query+".*$", $options: 'i'}}).fetch()
     else
       []
   'save': (doc, set, _id) ->

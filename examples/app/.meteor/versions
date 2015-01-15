@@ -1,5 +1,7 @@
+alanning:package-stubber@0.0.9
 aldeed:autoform@4.2.2
 aldeed:simple-schema@1.1.0
+amplify@1.0.0
 application-configuration@1.0.4
 autoupdate@1.1.4
 base64@1.0.2
@@ -32,6 +34,7 @@ iron:url@1.0.6
 jquery@1.0.2
 json@1.0.2
 launch-screen@1.0.1
+less@1.0.12
 livedata@1.0.12
 logging@1.0.6
 meteor@1.1.4
@@ -46,12 +49,16 @@ mongo@1.0.11
 nooitaf:semantic-ui@1.6.2
 observe-sequence@1.0.4
 ordered-dict@1.0.2
+practicalmeteor:chai@1.9.2_3
+practicalmeteor:loglevel@1.1.0_3
 random@1.0.2
 reactive-dict@1.0.5
 reactive-var@1.0.4
 reload@1.1.2
 retry@1.0.2
 routepolicy@1.0.3
+sanjo:jasmine@0.10.0
+sanjo:karma@1.1.3
 session@1.0.5
 spacebars@1.0.4
 spacebars-compiler@1.0.4
@@ -60,5 +67,11 @@ tracker@1.0.4
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3
+velocity:core@0.4.5
+velocity:html-reporter@0.3.2
+velocity:meteor-stubs@1.0.0_2
+velocity:node-soft-mirror@0.2.8
+velocity:shim@0.1.0
+velocity:test-proxy@0.0.4
 webapp@1.1.5
 webapp-hashing@1.0.2

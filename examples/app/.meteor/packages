@@ -12,3 +12,5 @@ aldeed:simple-schema
 reactive-var
 iron:router
 nooitaf:semantic-ui
+sanjo:jasmine
+velocity:html-reporter

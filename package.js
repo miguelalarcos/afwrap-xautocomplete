@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   api.use('jquery', 'client');
   //api.use('session', 'client');
   api.use('templating', 'client');
-  api.use('reactive-var', 'client');
+  //api.use('reactive-var', 'client');
   api.use('aldeed:autoform@4.2.2', 'client');
   api.use('miguelalarcos:xautocomplete', 'client');
   api.addFiles(['wrap.coffee'], 'client');
