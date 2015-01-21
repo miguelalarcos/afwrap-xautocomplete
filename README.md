@@ -3,6 +3,9 @@ afwrap-xautocomplete
 
 This is a wrap over the [xautocomplete](https://github.com/miguelalarcos/xautocomplete.git) package to work with ```AutoForm```.
 
+Explanation
+-----------
+
 In the examples folder you have a working example and a battery of tests with ```Jasmine```.
 
 Examples:
