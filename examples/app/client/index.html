@@ -39,3 +39,29 @@
         <div>{{> afFieldInput  type='xautocomplete' formid="1" name='authorsId' call='authors' xmultiple='true' reference='authors' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
     {{/autoForm}}
 </template>
+
+
+
+<template name="testing_settings">
+    {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='surname' settings="settings1"}}</div>
+    {{/autoForm}}
+</template>
+
+<template name="testing_reference_settings">
+    {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='authorId' settings="settings2"}}</div>
+    {{/autoForm}}
+</template>
+
+<template name="testing_multiple_settings">
+    {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='surnames' settings="settings3"}}</div>
+    {{/autoForm}}
+</template>
+
+<template name="testing_multiple_reference_settings">
+    {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='authorsId' settings="settings4"}}</div>
+    {{/autoForm}}
+</template>
