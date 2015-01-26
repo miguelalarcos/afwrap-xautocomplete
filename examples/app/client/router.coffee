@@ -26,8 +26,8 @@ Template.hola.events
     bookId.set(null)
 
 @renderAuthors = (x) -> Blaze.toHTMLWithData(Template.authors, x)
-@valueAuthors = (x) ->
-  if x
-    x.surname + ', '+ x.name
-  else
-    null
+@valueAuthors = (x) -> x.surname + ', '+ x.name
+  #if x
+  #  x.surname + ', '+ x.name
+  #else
+  #  null
