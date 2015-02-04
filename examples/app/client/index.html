@@ -1,9 +1,9 @@
 <template name="hola">
     {{#autoForm id="afInsertDemo" doc=this type="method" meteormethod='save' schema='bookSchema'}}
-        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='surname' call='authors' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
-        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='surnames' call='authors' xmultiple='true' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
-        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='authorId' call='authors' reference='authors' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
-        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='authorsId' call='authors' xmultiple='true' reference='authors' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='surname' call='authors' fieldref='surname' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='surnames' call='authors' xmultiple=true fieldref='surname' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='authorId' call='authors' reference='authors' fieldref='surname' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="afInsertDemo" name='authorsId' call='authors' xmultiple=true reference='authors' fieldref='surname' renderfunction='renderAuthors'}}</div>
         <div><button class="ui button" type="submit">submit</button></div>
     {{/autoForm}}
     {{#each books}}
@@ -18,25 +18,25 @@
 
 <template name="testing">
     {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
-        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='surname' call='authors' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='surname' call='authors' fieldref='surname' renderfunction='renderAuthors'}}</div>
     {{/autoForm}}
 </template>
 
 <template name="testing_reference">
     {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
-        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='authorId' call='authors' reference='authors' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='authorId' call='authors' reference='authors' fieldref='surname' renderfunction='renderAuthors'}}</div>
     {{/autoForm}}
 </template>
 
 <template name="testing_multiple">
     {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
-        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='surnames' call='authors' xmultiple='true' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='surnames' call='authors' xmultiple=true fieldref='surname' renderfunction='renderAuthors'}}</div>
     {{/autoForm}}
 </template>
 
 <template name="testing_multiple_reference">
     {{#autoForm id="1" doc=this type="method" meteormethod='save' schema='bookSchema'}}
-        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='authorsId' call='authors' xmultiple='true' reference='authors' valuefunction='valueAuthors' renderfunction='renderAuthors'}}</div>
+        <div>{{> afFieldInput  type='xautocomplete' formid="1" name='authorsId' call='authors' xmultiple=true reference='authors' fieldref='surname' renderfunction='renderAuthors'}}</div>
     {{/autoForm}}
 </template>
 

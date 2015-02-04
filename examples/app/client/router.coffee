@@ -25,4 +25,4 @@ Template.hola.events
     bookId.set(null)
 
 @renderAuthors = (x) -> Blaze.toHTMLWithData(Template.authors, x)
-@valueAuthors = (x) -> x.surname + ', '+ x.name
+
