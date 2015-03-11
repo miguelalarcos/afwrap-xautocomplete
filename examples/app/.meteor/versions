@@ -1,5 +1,5 @@
 alanning:package-stubber@0.0.9
-aldeed:autoform@4.2.2
+aldeed:autoform@5.0.2
 aldeed:simple-schema@1.3.0
 amplify@1.0.0
 application-configuration@1.0.4
@@ -39,7 +39,7 @@ livedata@1.0.12
 logging@1.0.6
 meteor@1.1.4
 meteor-platform@1.2.1
-miguelalarcos:afwrap-xautocomplete@0.3.0
+miguelalarcos:afwrap-xautocomplete@0.3.1
 miguelalarcos:xautocomplete@0.3.0
 minifiers@1.1.3
 minimongo@1.0.6
